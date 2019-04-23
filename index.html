@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="sidenav">
+	<div class="logo">
+    	<a href="#about">John John</a>
+	</div>
+	<button class="dropdown-btn">Work 
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-container">
+    	<a href="#">Project 1</a>
+    	<a href="#">Project 2</a>
+    	<a href="#">Project 3</a>
+    	<a href="#">Project 4</a>
+    	<a href="#">Project 5</a>
+    	<a href="#">Project 6</a>
+	</div>
+	<a href="#curriculumvitae">CV</a>
+	<a href="#contact">Contact</a>
+</div>
+
+<div class="maintxt">
+  <h2>Travis County Courthouse</h2>
+  <h3>Programatic Adjacency</h3>
+  <p>Kitsch YOLO kombucha, williamsburg mumblecore typewriter asymmetrical gastropub vape banjo pabst butcher keytar vexillologist. Organic taxidermy pop-up pabst, beard poke coloring book plaid bitters taiyaki fingerstache kinfolk glossier kickstarter. Gluten-free put a bird on it bushwick fam, direct trade everyday carry hexagon neutra meggings coloring book prism messenger bag pug tilde. Mixtape migas listicle kombucha. Tumeric twee sartorial tacos pour-over before they sold out succulents adaptogen slow-carb poutine direct trade post-ironic.</p>
+  <p>Tattooed pour-over celiac master cleanse, craft beer pug gastropub irony kitsch. Butcher selfies affogato jean shorts PBR&B raw denim. Typewriter swag bitters, irony franzen tote bag kogi cronut meh fanny pack art party iceland wolf. Organic lyft hot chicken beard, synth etsy aesthetic roof party shabby chic occupy.</p>
+  <h3>Circulation Slipping</h3>
+  <p>Succulents enamel pin schlitz, try-hard iceland tilde butcher stumptown raw denim gluten-free. Poke fingerstache glossier stumptown intelligentsia. Church-key celiac gluten-free fingerstache man bun farm-to-table. Heirloom leggings whatever, portland brooklyn succulents flannel. Portland seitan enamel pin, tacos cred retro brunch keffiyeh mustache polaroid hammock subway tile slow-carb letterpress occupy.</p>
+  <p>Man bun listicle gluten-free hoodie stumptown subway tile ramps typewriter. Fanny pack offal bushwick copper mug chambray synth. Narwhal man braid post-ironic pinterest schlitz pour-over. Artisan try-hard snackwave green juice sustainable. Chartreuse cronut food truck gentrify activated charcoal aesthetic tumeric freegan hoodie keytar craft beer skateboard truffaut.</p>
+  <p>Succulents enamel pin schlitz, try-hard iceland tilde butcher stumptown raw denim gluten-free. Poke fingerstache glossier stumptown intelligentsia. Church-key celiac gluten-free fingerstache man bun farm-to-table. Heirloom leggings whatever, portland brooklyn succulents flannel. Portland seitan enamel pin, tacos cred retro brunch keffiyeh mustache polaroid hammock subway tile slow-carb letterpress occupy.</p>
+  <p>Man bun listicle gluten-free hoodie stumptown subway tile ramps typewriter. Fanny pack offal bushwick copper mug chambray synth. Narwhal man braid post-ironic pinterest schlitz pour-over. Artisan try-hard snackwave green juice sustainable. Chartreuse cronut food truck gentrify activated charcoal aesthetic tumeric freegan hoodie keytar craft beer skateboard truffaut.</p>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
